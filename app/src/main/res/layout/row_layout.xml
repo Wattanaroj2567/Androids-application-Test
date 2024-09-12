@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    android:layout_margin="10dp"
+    android:background="#f7f7f7">
+
+    <!-- รูปภาพที่แสดงแบบเต็มอิสระและจัดตำแหน่งแนวตั้งกึ่งกลาง -->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Product image"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- ชื่อสินค้า -->
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:text="ชื่อสินค้า"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- ราคา -->
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLine"
+        android:layout_toRightOf="@id/icon"
+        android:text="ราคา"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+</RelativeLayout>
